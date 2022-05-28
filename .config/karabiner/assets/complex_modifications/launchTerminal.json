@@ -1,0 +1,26 @@
+{
+  "title": "Launch",
+  "rules": [
+    {
+      "description": "Launch terminal",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+		"shell_command": "open -n -aiterm"
+            } 
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Launch",
+  "rules": [
+    {
+      "description": "Launch browser",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+		"shell_command": "open -n -asafari"
+            } 
+          ]
+        }
+      ]
+    }
+  ]
+}

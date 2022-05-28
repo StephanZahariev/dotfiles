@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Stephan Zahariev
+	email = 23424829+StephanZahariev@users.noreply.github.com
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[core]
+	excludesfile = /Users/stephanzahariev/.gitignore
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

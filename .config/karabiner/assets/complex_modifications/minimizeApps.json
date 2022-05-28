@@ -1,0 +1,30 @@
+{
+  "title": "Minimize Apps",
+  "rules": [
+    {
+      "description": "Option+D to Command+F3",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "mission_control",
+              "modifiers": [
+                "left_command",
+		"fn"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

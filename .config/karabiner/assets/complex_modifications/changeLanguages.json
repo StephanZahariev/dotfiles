@@ -1,0 +1,30 @@
+{
+  "title": "Keyboard Language Change",
+  "rules": [
+    {
+      "description": "Command+Shift to Control+Shift+Space",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control",
+		"left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
