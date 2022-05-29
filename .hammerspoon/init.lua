@@ -2,6 +2,7 @@ function moveWindowToDisplay(d)
   return function()
     local displays = hs.screen.allScreens()
     local win = hs.window.focusedWindow()
+    --local win = hs.window.frontmostWindow()
     win:moveToScreen(displays[d], false, true)
   end
 end

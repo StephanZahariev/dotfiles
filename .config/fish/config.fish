@@ -1,7 +1,7 @@
 set -x GITHUB_USERNAME 'stephanzahariev'
 set -x GITHUB_TOKEN 'xxx'
 
-set -x KUBECONFIG "$HOME/.kube/eks-kubeconfig"
+set -x KUBECONFIG "$HOME/.kube/config"
 
 set -x PATH "$PATH:/usr/local/go/bin"
 
@@ -41,4 +41,4 @@ function src
     cd ~/src
 end
 
-source /usr/local/opt/asdf/libexec/asdf.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
