@@ -2,12 +2,25 @@
 
 ## Prep
 
-Download the repo content
+### Fish shell
+Install from: [https://fishshell.com](https://fishshell.com)
+
+Set as default shell:
 
 ```sh
-cd ~
-git clone git@github.com:StephanZahariev/dotfiles.git ~/Document/dotfiles
-cd ~/Documents/dotfiles
+chsh -s /usr/local/bin/fish
+```
+
+### Brew
+Install by
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Download the repo
+
+```sh
+git clone git@github.com:StephanZahariev/dotfiles.git ~/Documents/dotfiles
 ```
 
 ## Steps
