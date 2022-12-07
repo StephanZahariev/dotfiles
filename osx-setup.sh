@@ -1,9 +1,14 @@
 #!/bin/bash
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#Setup Dock
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock orientation right
+defaults write com.apple.dock minimize-to-application -bool TRUE
+defaults write com.apple.dock static-only -bool true
+killall Dock
 
-brew install fish
-
-sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
-chsh -s /opt/homebrew/bin/fish
-set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+#Setup Finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.Finder AppleShowAllFiles -bool true
+killall Finder

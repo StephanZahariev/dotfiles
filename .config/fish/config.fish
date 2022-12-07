@@ -1,6 +1,3 @@
-set -x GITHUB_USERNAME 'stephanzahariev'
-set -x GITHUB_TOKEN 'xxx'
-
 set -x KUBECONFIG "$HOME/.kube/config"
 
 set -x PATH "$PATH:/usr/local/go/bin"
@@ -13,7 +10,7 @@ eval (ssh-agent -c)
 function custom_prompt
     set_color normal
     set -l git_branch (git branch 2>/dev/null | sed -n '/\* /s///p')
-    set -l kube_context (kubectl config current-context | cut -d. -f1)
+#    set -l kube_context (kubectl config current-context | cut -d. -f1)
     set_color 2eb82e
     set_color cyan
     echo -n (prompt_pwd)

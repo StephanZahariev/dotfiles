@@ -4,7 +4,6 @@ brew install \
 	asdf \
 	grep \
 	kubectx \
-	python@3.9 \
 	kubeseal \
 	helm \
 	dep \
@@ -30,10 +29,14 @@ brew install --cask \
 	microsoft-teams \
 	mysqlworkbench \
 	robo-3t \
-	skitch \
 	the-unarchiver \
 	zoom \
-	microsoft-remote-desktop
+	appcleaner \
+	iterm2 \
+	stats \
+	docker \
+	microsoft-remote-desktop \
+	microsoft-teams
 
 code --install-extension alefragnani.numbered-bookmarks
 code --install-extension DavidAnson.vscode-markdownlint
@@ -46,7 +49,6 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
-code --install-extension ria.elastic
 code --install-extension timonwong.shellcheck
 code --install-extension zhangciwu.swig-tpl
 code --install-extension zsh.go-snippets
