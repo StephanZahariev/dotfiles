@@ -34,6 +34,8 @@ function fish_prompt
     custom_prompt
 end
 
+source ~/.config/fish/abbreviations.fish
+
 function src
     cd ~/src
 end
