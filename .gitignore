@@ -1,4 +1,6 @@
 .vscode
 .dccache
 .DS_Store
+.ignore
+__pycache__
 
